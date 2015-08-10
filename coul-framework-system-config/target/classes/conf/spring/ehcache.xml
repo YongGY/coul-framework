@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ehcache xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:noNamespaceSchemaLocation="ehcache.xsd" updateCheck="false"
+	monitoring="autodetect">
+	<diskStore path="java.io.tmpdir" />
+	
+	<!-- 默认的缓存配置 -->
+	<defaultCache maxElementsInMemory="100" eternal="false"
+		timeToIdleSeconds="60" timeToLiveSeconds="60" overflowToDisk="true" />
+		
+    <!-- 指定定制的缓存配置操作 -->		
+	<cache name="METHOD_CACHE"
+		maxElementsInMemory="10000" eternal="false" timeToIdleSeconds="1800"
+		timeToLiveSeconds="900" overflowToDisk="true" diskSpoolBufferSizeMB="30"
+		maxElementsOnDisk="10000000" diskPersistent="false"
+		diskExpiryThreadIntervalSeconds="120" memoryStoreEvictionPolicy="LRU" />
+</ehcache>

@@ -1,0 +1,8 @@
+Manifest-Version: 1.0
+Implementation-Title: coul-framework-system-config
+Implementation-Version: 0.0.1-SNAPSHOT
+Implementation-Vendor-Id: coul.framework
+Build-Jdk: 1.7.0_79
+Built-By: zengshl
+Created-By: Maven Integration for Eclipse
+

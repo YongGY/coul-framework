@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+<meta charset="utf-8">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<!-- 上述3个meta标签*必须*放在最前面，任何其他内容都*必须*跟随其后！ -->
+<meta name="description" content="">
+<meta name="author" content="">
+<meta charset="UTF-8">
+<title>布局-表单增加、修改、删除、查询案例操作</title>
+<script type="text/javascript" src="../../js/common/common.js"></script>
+
+</head>
+<body>
+	<!-- bootstrap布局 -->
+
+	<!-- boostrap  标题头   start -->
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<a class="navbar-brand" href="#">自动化受理配置管理系统</a>
+			</div>
+			<div id="navbar" class="navbar-collapse collapse">
+				<ul class="nav navbar-nav navbar-right">
+					<li><a href="#">你好，管理员张三</a></li>
+					<li><a href="#">帮助</a></li>
+				</ul>
+				<form class="navbar-form navbar-right">
+					<input type="text" class="form-control" placeholder="Search...">
+				</form>
+			</div>
+		</div>
+	</nav>
+	<!-- end -->
+
+	<!--bootstart 核心内容部分 start-->
+	<div class="container-fluid">
+		<div class="row">
+			<!-- 菜单栏导航   start -->
+			<div class="col-sm-3 col-md-2 sidebar">
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="#">受理事件管理 <span
+							class="sr-only">(current)</span></a></li>
+
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li><a href="">模块配置管理</a></li>
+
+				</ul>
+
+				<ul class="nav nav-sidebar">
+					<li><a href="">构件库配置管理</a></li>
+
+				</ul>
+				<ul class="nav nav-sidebar">
+					<li class="active"><a href="">业务数据配置管理</a></li>
+
+				</ul>
+			</div>
+			<!-- end -->
+
+			<!-- 具体的业务内容实现过程 -->
+			<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+				<!-- 查询条件  start-->
+				<div class="bs-callout bs-callout-warning"
+					id="callout-buttons-disabled-anchor">
+					<form class="form-inline">
+						<div class="form-group">
+							<input type="text" class="form-control" id="exampleInputName2"
+								placeholder="模块名称">
+						</div>
+						<div class="form-group">
+							<input type="email" class="form-control" id="exampleInputEmail2"
+								placeholder="模块类型">
+						</div>
+
+					</form>
+				</div>
+				<!-- 查询条件 END -->
+
+
+
+
+				<!-- 表格的数据操作 -->
+				<div class="panel panel-default">
+					<div class="panel-heading">
+						<div class="row" style="margin-left: 0px; margin-right: 0px;">
+							<div class="col-lg-9">模块列表信息</div>
+							<div class="col-lg-3">
+								<a href="#myModal" role="button" class="btn btn-default" data-toggle="modal">新增</a>  
+								<button class="btn btn-primary" type="button">修改</button>
+								<button class="btn btn-success" type="button">删除</button>
+							</div>
+						</div>
+					</div>
+
+					<div class="table-responsive">
+
+						<table class="table table-striped table-bordered table-hover"
+							id="sample_2">
+							<thead>
+								<tr>
+									<th style="width1: 8px;"><input type="checkbox"
+										class="group-checkable" data-set="#sample_2 .checkboxes" /></th>
+									<th>模块名称</th>
+									<th>模块编码</th>
+									<th>模块类型</th>
+								</tr>
+							</thead>
+							<tbody>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>shuxer</td>
+									<td><a href="mailto:shuxer@gmail.com">shuxer@gmail.com</a></td>
+									<td><span class="label label-sm label-success">Approved</span></td>
+								</tr>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>looper</td>
+									<td><a href="mailto:looper90@gmail.com">looper90@gmail.com</a></td>
+									<td><span class="label label-sm label-warning">Suspended</span></td>
+								</tr>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>userwow</td>
+									<td><a href="mailto:userwow@yahoo.com">userwow@yahoo.com</a></td>
+									<td><span class="label label-sm label-success">Approved</span></td>
+								</tr>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>user1wow</td>
+									<td><a href="mailto:userwow@gmail.com">userwow@gmail.com</a></td>
+									<td><span class="label label-sm label-default">Blocked</span></td>
+								</tr>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>restest</td>
+									<td><a href="mailto:userwow@gmail.com">test@gmail.com</a></td>
+									<td><span class="label label-sm label-success">Approved</span></td>
+								</tr>
+								<tr class="odd gradeX">
+									<td><input type="checkbox" class="checkboxes" value="1" /></td>
+									<td>foopl</td>
+									<td><a href="mailto:userwow@gmail.com">good@gmail.com</a></td>
+									<td><span class="label label-sm label-success">Approved</span></td>
+								</tr>
+
+							</tbody>
+						</table>
+					</div>
+
+
+				</div>
+
+
+
+			</div>
+		</div>
+	</div>
+	<!--bootstart 核心内容部分 end -->
+	
+	
+	<!-- 弹出框-新增修改的内容 -->
+	<div id="myModal" class="modal hide fade"  role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">  
+            <div class="modal-header">  
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>  
+                <h3 id="myModalLabel">Modal header</h3>  
+            </div>  
+            <div class="modal-body">  
+                <p>弹出层…</p>  
+            </div>  
+            <div class="modal-footer">  
+                <button class="btn" data-dismiss="modal" aria-hidden="true">Close</button>  
+                <button class="btn btn-primary">Save changes</button>  
+            </div>  
+    </div>  
+	
+</body>
+</html>

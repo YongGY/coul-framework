@@ -1,0 +1,39 @@
+﻿<project xmlns="http://maven.apache.org/POM/4.0.0"
+         xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+         xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+    
+    <parent>
+        <artifactId>coul-framework</artifactId>
+        <groupId>coul.framework</groupId>
+        <version>0.0.1-SNAPSHOT</version>
+    </parent>
+    
+    <modelVersion>4.0.0</modelVersion>
+    <artifactId>coul-framework-system-config</artifactId>
+    <description>保存所有可更改的公用配置文件</description>
+    <packaging>jar</packaging>
+    <name>coul-framework-system-config</name>
+    <url>http://maven.apache.org</url>
+
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
+    <dependencies>
+        <dependency>
+            <groupId>junit</groupId>
+            <artifactId>junit</artifactId>
+            <version>${junit.version}</version>
+            <scope>test</scope>
+        </dependency>
+        <!-- 
+        <dependency>
+            <groupId>ffcs-atte</groupId>
+            <artifactId>ffcs-atte-core</artifactId>
+            <version>${project.version}</version>
+        </dependency>
+         -->
+    </dependencies>
+
+   
+</project>

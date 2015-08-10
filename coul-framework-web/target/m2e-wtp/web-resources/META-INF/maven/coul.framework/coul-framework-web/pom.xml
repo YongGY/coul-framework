@@ -1,0 +1,28 @@
+<?xml version="1.0"?>
+<project
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd"
+	xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<artifactId>coul-framework</artifactId>
+		<groupId>coul.framework</groupId>
+		<version>0.0.1-SNAPSHOT</version>
+	</parent>
+	<groupId>coul.framework</groupId>
+	<artifactId>coul-framework-web</artifactId>
+	<name>coul-framework-web</name>
+	<packaging>war</packaging>
+	<url>http://maven.apache.org</url>
+	<properties>
+		<project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+	</properties>
+	
+	 <dependencies>
+	    <dependency>
+			<groupId>coul.framework</groupId>
+			<artifactId>coul-framework-config-control</artifactId>
+			<version>${project.version}</version>
+		</dependency>
+	</dependencies>
+    
+</project>

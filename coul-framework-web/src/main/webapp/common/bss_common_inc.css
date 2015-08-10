@@ -1,0 +1,81 @@
+.message_page_body{
+font-size:12px;
+	font-family: Arial, Helvetica, sans-serif;
+	color:#000;
+	text-align:left;
+	background:#ffffff;
+	margin:0px;
+}
+.message_table_container{
+	padding-top: 100px;
+	margin:0 auto;
+	text-align: center;
+}
+
+.message{
+	
+	
+	margin:0 auto;
+	text-align: center;
+	width: 500px;
+	
+	padding:10px;
+}
+
+.message TABLE{
+   width: 100%;
+   height: 100px;
+   border:1px gray solid;
+   background:#F6F6F6;
+
+}
+
+.messageTitle{
+	width: 100%;
+	text-align: center;
+	font-size: 20px;
+}
+.messageBody{
+	width: 100%;
+	text-align: center;
+	vertical-align: middle;
+	font-size: 20px;
+	font-weight: bold;
+	
+}
+.messageBody IMG{
+	
+}
+
+.messageBody SPAN{
+	height:54px;
+	vertical-align: middle;
+}
+
+.messageBussiness{
+	padding-top: 5px;
+	padding-left: 20px;
+	font-size: 20px;
+	
+	border-top:1px gray dashed; 
+}
+.messageBussiness SPAN{
+	width: 100%;
+}
+.messageBussiness label{
+	font-weight: bold;
+}
+.debugMessageForDev SPAN{
+	width:100%;
+	border-top:1px gray dashed; 
+	border-bottom:1px gray dashed;
+	text-align:center;
+	padding:5px 0px 5px 0px;
+	font-size: 20px;
+	font-weight: bold;
+}
+.debugMessageForDev TEXTAREA{
+	border: 0px;
+	padding:10px;
+	
+}

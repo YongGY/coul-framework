@@ -1,0 +1,37 @@
+ --代码关键点记录
+ 
+ 1、在BaseDaoSpringJdbcImpl的代码文件里面，下面的代码要关注
+ 
+ //初始化pagingSqlBuilder  ---跟数据配置的数据驱动存在关系
+		pagingSqlBuilder = new PagingSqlBuilder(((DriverManagerDataSource)
+				jdbcTemplate.getDataSource()).getUrl().replaceAll("://.*$", ""));
+				
+  这里表达的代码跟你当前Spring中配置的数据的类型有密切的关系--如果存在JNDI的情况下，建议采用C3P0的的传统数据源
+  
+  
+ 2、左右连接时的参数设置
+ 
+  
+ @Reference(value=User.class , column="id")
+ @Column("user_id")
+ private Integer   userId;
+    
+ @Association
+ private  User  user;
+    
+ 这里面所表达的关系可以是N：1 也可以是 1：N的两者关系
+  
+ 2、web端请求数据的的统一格式要求：
+ 
+ 2、1 RequestData  其中包含 JSON的数据格式和map的数据格式
+ 
+    --定位相关的方法：对MAP数据进行转对象、MAP转LIST各个之间的转化参考具体对象的编写过程
+ 
+ 2、2 PagingGridData 分页的数据模型
+ 
+ 2.3 分页的请求数据模型
+ 
+ 
+ 3、activemq   启动时服务器的管理地址是 http://localhost:8161/admin
+   
+  
